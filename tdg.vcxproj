@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backprop.h" />
+    <ClInclude Include="bencher.h" />
+    <ClInclude Include="bgboard.h" />
+    <ClInclude Include="bgeval.h" />
+    <ClInclude Include="bgeval1.h" />
+    <ClInclude Include="bgnn.h" />
+    <ClInclude Include="bna.h" />
+    <ClInclude Include="bnas.h" />
+    <ClInclude Include="cmd.h" />
+    <ClInclude Include="cmds.h" />
+    <ClInclude Include="gnudb.h" />
+    <ClInclude Include="feats.h" />
+    <ClInclude Include="mymx.h" />
+    <ClInclude Include="myopts.h" />
+    <ClInclude Include="myutils.h" />
+    <ClInclude Include="myvec.h" />
+    <ClInclude Include="nn.h" />
+    <ClInclude Include="nneval.h" />
+    <ClInclude Include="nnio.h" />
+    <ClInclude Include="nnis.h" />
+    <ClInclude Include="nnlayer.h" />
+    <ClInclude Include="nnos.h" />
+    <ClInclude Include="omplock.h" />
+    <ClInclude Include="pubeval.h" />
+    <ClInclude Include="quarts.h" />
+    <ClInclude Include="randev.h" />
+    <ClInclude Include="selfgame.h" />
+    <ClInclude Include="sliv.h" />
+    <ClInclude Include="sort.h" />
+    <ClInclude Include="svnversion.h" />
+    <ClInclude Include="winrate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backprop.cpp" />
+    <ClCompile Include="beatpube.cpp" />
+    <ClCompile Include="bencher.cpp" />
+    <ClCompile Include="bestmove.cpp" />
+    <ClCompile Include="bestnn.cpp" />
+    <ClCompile Include="bgboard.cpp" />
+    <ClCompile Include="bgeval.cpp" />
+    <ClCompile Include="bgeval1.cpp" />
+    <ClCompile Include="bgnn.cpp" />
+    <ClCompile Include="bgsuptrain.cpp" />
+    <ClCompile Include="blackmoves.cpp" />
+    <ClCompile Include="checkbench.cpp" />
+    <ClCompile Include="cmd.cpp" />
+    <ClCompile Include="cmdline.cpp" />
+    <ClCompile Include="coinsim.cpp" />
+    <ClCompile Include="cvtgnudbs.cpp" />
+    <ClCompile Include="dobench.cpp" />
+    <ClCompile Include="drawpos.cpp" />
+    <ClCompile Include="feats.cpp" />
+    <ClCompile Include="gnubench.cpp" />
+    <ClCompile Include="gnubg_hacks.cpp" />
+    <ClCompile Include="gnudb.cpp" />
+    <ClCompile Include="gnumove.cpp" />
+    <ClCompile Include="gnumove_hack.cpp" />
+    <ClCompile Include="htsim.cpp" />
+    <ClCompile Include="matchsim.cpp" />
+    <ClCompile Include="mypube.cpp" />
+    <ClCompile Include="myutils.cpp" />
+    <ClCompile Include="nn.cpp" />
+    <ClCompile Include="nn2cpp.cpp" />
+    <ClCompile Include="nneval.cpp" />
+    <ClCompile Include="nneval_game.cpp" />
+    <ClCompile Include="nnlayer.cpp" />
+    <ClCompile Include="pubepos.cpp" />
+    <ClCompile Include="pubeval.cpp" />
+    <ClCompile Include="pubeval_data.cpp" />
+    <ClCompile Include="quarts.cpp" />
+    <ClCompile Include="selfgame.cpp" />
+    <ClCompile Include="sigmoid.cpp" />
+    <ClCompile Include="sliv.cpp" />
+    <ClCompile Include="startrolls.cpp" />
+    <ClCompile Include="tdgame.cpp" />
+    <ClCompile Include="tdg_main.cpp" />
+    <ClCompile Include="tdw.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="traintd.cpp" />
+    <ClCompile Include="winrate.cpp" />
+    <ClCompile Include="winsim.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{DE77771C-713A-4499-AB6A-672C9CA45488}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>tdg</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>c:\bat\svnversion.bat</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>SVN</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>c:\bat\svnversion.bat</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>SVN</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>c:\bat\svnversion.bat</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>SVN</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>c:\bat\svnversion.bat</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>SVN</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
