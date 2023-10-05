@@ -64,7 +64,7 @@ uint64 g_FreeTotal;
 #endif
 
 const char *SVN_VERSION =
-#include "svnversion.h"
+"svn"
 ;
 
 static const double LOG2 = log(2.0);

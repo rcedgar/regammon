@@ -205,12 +205,9 @@ void PushGameState(GameState &GS)
 			}
 		else
 			{
-			unsigned Points = Board.GetWinPoints();
+			int Points = Board.GetPoints();
 			string s;
-			if (Board.IsWhiteWin())
-				Ps(s, "Computer wins %u points", Points);
-			else
-				Ps(s, "You win %u points", Points);
+			Ps(s, "%+d points", Points);
 			MessageBox(g_hwnd, s.c_str(), "", MB_OK);
 			}
 		StartNewGame();

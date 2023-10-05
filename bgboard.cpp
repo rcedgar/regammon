@@ -335,6 +335,11 @@ int BgBoard::GetPoints() const
 	return 0;
 	}
 
+unsigned BgBoard::GetWinPoints() const
+	{
+	return 1;
+	}
+
 //bool BgBoard::IsBlackWin() const
 //	{
 //	unsigned nw = m_w[OFF];

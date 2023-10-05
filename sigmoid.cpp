@@ -2,7 +2,7 @@
 
 float CalcSigmoid(float x)
 	{
-	float y = float(1.0)/(float(1.0) + exp(-x));
+	float y = float(1.0f)/(float(1.0f) + expf(-x));
 	return y;
 	}
 

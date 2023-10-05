@@ -73,6 +73,7 @@ public:
 	void GetNNInput_tesauro(vector<float> &x, bool WhiteTurn) const;
 	void GetNNInput_tesaurof(vector<float> &x, bool WhiteTurn) const;
 	void AppendNNInputFeatures(vector<float> &x) const;
+	unsigned GetWinPoints() const;
 
 	void FromNNInput(const vector<float> &x);
 
